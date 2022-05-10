@@ -23,4 +23,11 @@ Deployment and modifications:
   
 2. Publish the files on Web Server
 
-3. If you want to delete old messages automaticly from database, run handlers/message_delete_expired.php in schedule
+Maintnanace and modifications:
+1. If you want to delete old messages automaticly from database, run handlers/message_delete_expired.php in schedule
+2. Add or edit categories:
+  a. Create class at style/style.css
+  b. Add category name as new select option at index.php. Look for "editCategory" element.
+  c. Add at category class name and class as new switch option at handlers/message_get.php. Look for "**EDIT CATEGORIES HERE**" part
+
+

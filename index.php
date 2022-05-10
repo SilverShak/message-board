@@ -17,7 +17,7 @@
 <span class="headerTitle">Messages<span>
 </div>
 <hr>
-<button id="messageAdd" href="#" class="btn">הוספה</button>
+<button id="messageAdd" href="#" class="btn">Add new</button>
 &nbsp;&nbsp;
 <input type="checkbox" id="get_all">
 <label for="get_all">All messages</label>

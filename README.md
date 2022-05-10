@@ -18,8 +18,8 @@ Deployment and modifications:
     6. Name: timestamp | Type: TIMESTAMP | Value: DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
   c. Create user named "message_editor" with the following privilages on Database: SELECT, INSERT, UPDATE, DELETE.
   
-    SQL Commaned: 
-    **CREATE DATABASE messageboard;CREATE TABLE messageboard.messages (id int not null auto_increment primary key, category varChar(15), message varChar(350), author varChar(15), expiration DATE, timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP);**
+    Complete SQL command:
+    **CREATE DATABASE messageboard;CREATE TABLE messageboard.messages (id int not null auto_increment primary key, category varChar(15), message varChar(350), author varChar(15), expiration DATE, timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP);CREATE USER 'message_editor'@'localhost' IDENTIFIED BY 'pass1234';GRANT SELECT, INSERT, UPDATE, DELETE ON messageboard.messages TO 'message_editor'@'localhost';**
   
 2. Publish the files on Web Server
 

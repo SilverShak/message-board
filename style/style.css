@@ -9,7 +9,6 @@ body {
 .headerArea {
 	  display: flex;
 	  justify-content: flex-start;   /* adjustment */
-	  position: relative; 
 	  align-items: center;
 	  justify-content: flex-end;
 }
@@ -32,8 +31,7 @@ body {
 } 
 
 .headerTitle {
-	  flex: 0 1 auto;
-      position: relative;             /* new */
+	flex: 0 1 auto;
       left: 50%;
       transform: translateX(-50%);
 	  font-size: 8em;

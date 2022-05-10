@@ -2,7 +2,7 @@
 
 body {
 	
-	direction: rtl;
+	direction: ltr;
 	font-family: arial;
 }
 
@@ -85,11 +85,6 @@ body {
     width:40px;
     height:40px;	
 }
-
-.btnMarkAsRead{
-    background:url(/images/unreadIcon.png) no-repeat;
-}
-
 
 .btnEdit{
     background:url(/images/editIcon.png) no-repeat;

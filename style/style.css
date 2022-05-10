@@ -19,12 +19,12 @@ body {
       margin-left: auto;
 }
 
-.categoryNSOC {
-	background-color: #c4e5f2;
-}
-
 .categoryGeneral {
 	background-color: #c4f2c9;
+}
+
+.categoryPersonal {
+	background-color: #c4e5f2;
 }
 
 .CategoryExpired {

@@ -46,26 +46,16 @@ while($row = mysqli_fetch_array($result))
 		$categoryClass = "categoryExpired";
 	}
 	else {
+		
+		//**EDIT CATEGORIES HERE**
 		switch ($category) {
 		  
-			case "כללי":
+			case "General":
 			  $categoryClass = "categoryGeneral";
 			  break;
-		  
-			case "UptimeRobot":
-			  $categoryClass = "categorUptimeRobot";
-			  break;
-			 
-			 case "SIEM":
-			  $categoryClass = "categorySIEM";
-			  break;
-			  
-			  case "Cacti":
-			  $categoryClass = "categoryCacti";
-			  break;
-			  
-			  case "EPP":
-			  $categoryClass = "CategoryEPP";
+				
+			 case "Personal":
+			  $categoryClass = "categoryPersonal";
 			  break;
 		  
 		  default: $categoryClass = null;
@@ -85,11 +75,11 @@ while($row = mysqli_fetch_array($result))
 		echo '<div class="messageMetaData">';
 			echo '<span name="category" class="category">' . $category . '</span>';
 			echo ' | ';
-			echo 'על ידי: <span name="author" class="author">' . $author . '</span>';
+			echo 'By: <span name="author" class="author">' . $author . '</span>';
 			echo ' | ';
-			echo 'פורסם ב- <span name="timestamp" class="timestamp">' . $timestamp . '</span>';
+			echo 'Published at <span name="timestamp" class="timestamp">' . $timestamp . '</span>';
 			echo ' | ';
-			echo 'תוקף עד <span name="expiration" class="expiration">' .date('d/m', strtotime($row['expiration'])) . '</span>';
+			echo 'Valid until <span name="expiration" class="expiration">' .date('d/m', strtotime($row['expiration'])) . '</span>';
 		echo "</div>";
 		echo '<div class="editButtons">';
 			//echo '<button class="btnMarkAsRead"></button>';

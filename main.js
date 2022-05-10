@@ -171,7 +171,7 @@ function openEditForm(event) {
   //if edit from existing post, get data from it
   if (id != null) {
 		console.log("edit existing record");
-		document.getElementById("editAction").innerHTML = "עריכה";
+		document.getElementById("editAction").innerHTML = "Edit";
 		
 		let category = messageContainer.querySelectorAll('[name=category]')[0].innerHTML;
 		let message = (messageContainer.querySelectorAll('[name=message]')[0].innerHTML).replace("<br>","");
@@ -189,7 +189,7 @@ function openEditForm(event) {
 		
   } else {
 	  console.log("add new record");
-	  document.getElementById("editAction").innerHTML = "יצירה";
+	  document.getElementById("editAction").innerHTML = "Create";
 	  expirationPicker.valueAsDate = new Date();
 	  
 	

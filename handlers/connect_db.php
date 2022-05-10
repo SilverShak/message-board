@@ -1,6 +1,6 @@
 <?php
 
-$con = new mysqli("localhost", "messageboard", "pass1234", "message_editor");
+$con = new mysqli("localhost", "message_editor", "pass1234", "messageboard");
 
 if ($con->connect_error) {
   die("Connection failed: " . $con->connect_error);
